@@ -43,7 +43,8 @@ func (l *LazyDLL) libFullPath(name string) string {
 			return libPath
 		}
 	}
-	return name
+// +build !windows
+return name
 }
 
 func (l *LazyDLL) Load() error {

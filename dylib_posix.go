@@ -1,5 +1,6 @@
 // +build !windows
 // +build cgo
+// +build !arm64
 
 package dylib
 
